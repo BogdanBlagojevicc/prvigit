@@ -15,7 +15,7 @@ public class Client {
         try{
             sock = new  Socket(addr, port);
 
-            String poruka = "Hello world!";
+            String poruka = "Hello world! Today we learned Git!";
             PrintWriter writer = new PrintWriter(new OutputStreamWriter(sock.getOutputStream()), true);
             writer.println(poruka);
 
